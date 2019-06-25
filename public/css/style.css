@@ -1,0 +1,119 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    border-left: 1px solid #E6ECF8;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #293347;
+}
+
+
+.mainPhoto{
+    height: 300px;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.4)!important;
+}
+
+.bg-primary{
+    background-color: #8C43FF!important;
+}
+
+.text-primary{
+    color: #8C43FF!important;
+}
+
+#personal, #about, #projects, #contact{
+    min-height: 100vh;
+}
+
+#about{
+    margin-top: -1px;
+    min-height: 120vh;
+}
+
+#contactBtn{
+    padding-left: 25px;
+    padding-right: 25px;
+    color: #8C43FF!important;
+    border-color: #8C43FF!important;
+    transition: color .4s ease,background-color .4s ease;
+    display: inline-block;
+}
+
+#contactBtn:hover{
+    background-color: #8C43FF!important;
+    color: white!important;
+}
+
+#submit{
+    color: white!important;
+    border-color: white!important;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    transition: color .4s ease,background-color .4s ease;
+}
+
+#submit:hover{
+    color: #8C43FF!important;
+    background-color: white!important;
+}
+
+
+
+.title{
+    font-weight: 800;
+    line-height: 1.125;
+    font-size: 2rem !important;
+}
+
+.subtitle{
+    font-weight: 300;
+    line-height: 1.5;
+    font-size: 1.25rem !important;
+}
+
+.card .card-body ul li{
+    margin-top: 0.25em!important;
+    font-size: 18px;
+}
+
+.card .card-body p{
+    font-size: 18px;
+}
+
+.subText{
+    font-size: 14px!important;
+}
+
+div.social a{
+    text-decoration: none;
+    font-size: 1.90rem;
+    width: 2em;
+    height: 2em;
+    color: #fff;
+    text-shadow: 1.25px 0px 0px #c8cccf, -1.25px 0px 0px #c8cccf, 0px 1.25px 0px #c8cccf, 0px -1.25px 0px #c8cccf;
+    transition: color .2s ease,text-shadow .2s ease;
+    border-radius: 100%;
+    border: solid 1px #c8cccf;
+    line-height: 2em;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+div.social a:hover{
+    text-shadow: 1.25px 0px 0px #8C43FF, -1.25px 0px 0px #8C43FF, 0px 1.25px 0px #8C43FF, 0px -1.25px 0px #8C43FF;
+    border: solid 1px #8C43FF;
+
+}
+
+.sticky-top {
+    transition: all 0.6s ease-in;
+}
+
+.stuck .sticky-top {
+    -webkit-box-shadow: 0 0.125rem 0.25rem 0 rgba(58, 59, 69, 0.2) !important;
+    box-shadow: 0 0.125rem 0.25rem 0 rgba(58, 59, 69, 0.2) !important;
+}
