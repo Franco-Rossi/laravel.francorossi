@@ -19,6 +19,6 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
-Auth::routes();
+Auth::routes([ 'register' => false ]);
 
 Route::get('/admin', 'AdminController@index')->name('admin');

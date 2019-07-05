@@ -21,48 +21,53 @@
 </head>
 <body>
 
+
+    {{------------------ NavBar ------------------}}
 <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
     <a class="navbar-brand text-primary" href="#">Franco Rossi</a>
+
+    <div class="ml-5 language-container">
+        <a href="/"><img src="{{asset(url('img/esp.png'))}}" alt="Español" class="language rounded-circle shadow-sm"></a>
+        <a href="/en"><img src="{{asset(url('img/eng.png'))}}" alt="English" class="language ml-2 rounded-circle shadow-sm"></a>
+    </div>
+
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 
+    
+
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
-            <li class="nav-item active mr-5">
+            <li class="nav-item mr-5">
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item mr-5">
-                <a class="nav-link" href="about">Habilidades</a>
+                <a class="nav-link" href="#about">Sobre mi</a>
             </li>
             <li class="nav-item mr-5">
-                <a class="nav-link" href="about">Sobre mi</a>
+                <a class="nav-link" href="#abilities">Habilidades</a>
             </li>
             <li class="nav-item mr-5">
-                <a class="nav-link" href="about">Projectos</a>
+                <a class="nav-link" href="#projects">Proyectos</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link rounded-pill border" id="contactBtn" href="about">Contacto</a>
+                <a class="nav-link rounded-pill border" id="contactBtn" href="#contact">Contacto</a>
             </li>
         </ul>
     </div>
 </nav>
 
+{{------------------ Content ------------------}}
+
 @yield('content')
 
-
+{{------------------ Scripts ------------------}}
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-<!-- Bootstrap core JavaScript-->
-{{--<script src="/public/vendor/jquery/jquery.min.js"></script>--}}
-{{--<script src="/public/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>--}}
-
-<!-- Core plugin JavaScript-->
 <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-<!-- Custom scripts for all pages-->
 <script src="js/sb-admin-2.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="js/pages.js"></script>

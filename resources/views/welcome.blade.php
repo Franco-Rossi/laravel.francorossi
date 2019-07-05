@@ -5,18 +5,20 @@
 @section('content')
 
 
-    <div class="container rounded p-5 text-center" id="personal">
+    <div class="container rounded mb-5 text-center" id="personal">
         <span class="position-absolute navTrigger"><!-- hidden trigger to apply 'stuck' styles --></span>
-        <i class="fas fa-code display-4 font-weight-bold mt-5 text-primary"></i>
+        <i class="fas fa-code display-4 font-weight-bold text-primary"></i>
         <h1 class="display-4 text-dark mt-2 font-weight-bold">Full-Stack Web Developer</h1><br>
-        <p class="lead text-dark">Programador Web Full-Stack, con muchas ganas de escribir codigo.</p>
-        <img src="{{asset(url('img/pic.png'))}}" alt="" class="mainPhoto rounded-circle shadow-lg m-5">
-        <hr class="my-4 text-dark">
+        <p class="lead text-dark">Con muchas ganas de escribir codigo.</p>
+        <br>
+        <a href="{{asset(url('resumesp.pdf'))}}" class="rounded shadow-sm" id="resume" target="_BLANK">Descargar Curriculum</a>
+        <br>
+        <img src="{{asset(url('img/pic.png'))}}" alt="" class="mainPhoto rounded-circle shadow-lg my-4">
+        <hr class="mt-5 text-dark">
         <p class="text-dark">Desarrollando para la web moderna.</p>
         <div class="social">
-            <a href="#" class="fab fa-linkedin-in shadow-sm mx-3"></a>
-            <a href="#" class="fab fa-twitter shadow-sm mx-3"></a>
-            <a href="#" class="fab fa-github shadow-sm mx-3"></a>
+            <a href="https://www.linkedin.com/in/franco-rossi-7bbb56162/" class="fab fa-linkedin-in shadow-sm mx-3" target="_BLANK"></a>
+            <a href="https://github.com/Franco-Rossi" class="fab fa-github shadow-sm mx-3" target="_BLANK"></a>
         </div>
     </div>
 
@@ -24,20 +26,21 @@
 
 
 
-    <div class="hero">
+    <div class="hero container">
         <img src="{{asset(url('img/hero.png'))}}" class="img-fluid" alt="">
     </div>
 
 
     <div class="container-fluid text-center bg-primary text-white d-flex" id="about" style="align-items: center; ">
-        <div>
+        <div class="mt-3">
             <h1 class="pt-5 font-weight-bold mb-5">Hola! Soy Franco.</h1>
             <p class="col-sm-12 col-xl-8 subtitle mx-auto mt-5 mb-5">Desde chico me gustó la logica y las computadoras, eso me inicio en el mundo de la programación. Me considero una persona autodidacta, sociable y responsable, con un perfil proactivo. Soy confidente, naturalmente curioso, y trabajo constantemente para mejorar mis fallas de uno en uno.</p>
             <img src="{{asset(url('img/vect1.svg'))}}" class="img-fluid mt-5" alt="" data-aos="zoom-in" style="max-height: 400px; margin-bottom: 8rem;">
         </div>
     </div>
 
-    <div class="container text-center" id="abilities" style="margin-top: -6rem;">
+    <span class="mt-3" id="abilities"></span>
+    <div class="container text-center" id="" style="margin-top: -6rem;">
         <div class="card-group shadow-lg">
             <div class="card">
                 <div class="card-body p-5">
@@ -75,85 +78,82 @@
                     <h5 class="card-text mt-4 text-primary font-weight-bold mb-0">HTML, CSS, JavaScript & PHP</h5>
                     <p class="card-text subText">Juan Pablo de la Torre - Freelance Web Developer</p>
                     <h5 class="card-text mt-4 text-primary font-weight-bold mb-0">Programador Web Inicial</h5>
-                    <p class="card-text subText">Universidad Tecnolofica Nacional (UTN) - Buenos Aires</p>
+                    <p class="card-text subText">Universidad Tecnologica Nacional (UTN) - Buenos Aires</p>
                     <h5 class="card-text mt-4 text-primary font-weight-bold mb-0">Fundamentos de la Programacion</h5>
-                    <p class="card-text subText">Universidad Tecnolofica Nacional (UTN) - Buenos Aires</p>
+                    <p class="card-text subText">Universidad Tecnologica Nacional (UTN) - Buenos Aires</p>
                 </div>
             </div>
         </div>
     </div>
 
     <br><br><br>
-    <hr class="my-4 text-dark mt-5">
-    <div class="container text-center mb-5">
+    <hr class="mb-3 text-dark mt-5" >
+    <div class="container text-center mb-5 pt-4" id="projects">
         <span class="position-absolute projectsTrigger"><!-- hidden trigger to apply 'stuck' styles --></span>
-        <h1 class="pt-5 font-weight-bold text-dark mb-5">Mis ultimos projectos</h1>
+        <h1 class="pt-5 font-weight-bold text-dark mb-5">Mis ultimos proyectos</h1>
         <p class="col-sm-12 col-xl-8 subtitle mx-auto mt-5 mb-5">Aqui estan algunos de mis trabajos mas recientes.</p>
 
-        <div class="row">
+        <div class="row justify-content-around">
             <div class="col-12 col-md-4 my-3">
                 <div class="card bg-dark text-white shadow-lg" data-aos="zoom-in-up">
-                    <img class="card-img " src="https://www.elintransigente.com/u/fotografias/fotosnoticias/2018/9/6/473469.jpg" alt="Card image">
+                    <img class="card-img" src="{{asset(url('img/projects/organizapp.png'))}}" alt="Card image">
                     <div class="card-img-overlay">
-                        <h5 class="card-title d-none">Card title</h5>
-                        <p class="card-text d-none">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="project-info">
+                            <h5 class="card-title">OrganizApp</h5>
+                            <p class="card-text text-muted">Trabajo en progreso</p>
+                            <p class="">Organizador personal con grupos, mensajeria instantanea y tranferencia de archivos.</p>
+                            <a href="https://github.com/Franco-Rossi/taskapp" class="fab fa-github shadow-sm mx-3" target="_BLANK"></a>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="col-12 col-md-4 my-3">
                 <div class="card bg-dark text-white shadow-lg" data-aos="zoom-in-up">
-                    <img class="card-img" src="https://www.elintransigente.com/u/fotografias/fotosnoticias/2018/9/6/473469.jpg" alt="Card image">
+                    <img class="card-img" src="{{asset(url('img/projects/photofolio.png'))}}" alt="Card image">
                     <div class="card-img-overlay">
-                        <h5 class="card-title d-none">Card title</h5>
-                        <p class="card-text d-none">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="project-info">
+                            <h5 class="card-title">PhotoFolio</h5>
+                            <p class="card-text text-muted">Trabajo en progreso</p>
+                            <p class="">Red social orientada al trabajo para diseñadores y fotografos.</p>
+                            <a href="https://github.com/Franco-Rossi/photofolio" class="fab fa-github shadow-sm mx-3" target="_BLANK"></a>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="col-12 col-md-4 my-3">
                 <div class="card bg-dark text-white shadow-lg" data-aos="zoom-in-up">
-                    <img class="card-img" src="https://www.elintransigente.com/u/fotografias/fotosnoticias/2018/9/6/473469.jpg" alt="Card image">
+                    <img class="card-img" src="{{asset(url('img/projects/comidasaludable.png'))}}" alt="Card image">
                     <div class="card-img-overlay">
-                        <h5 class="card-title d-none">Card title</h5>
-                        <p class="card-text d-none">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="project-info">
+                            <h5 class="card-title">Casa de Comida Saludable</h5>
+                            <p class="">Pagina web para restaurante y almacén. Formulario de contacto. Panel de administración con ingreso a base de datos.</p>
+                            <a href="https://github.com/Franco-Rossi/comidasaludable" class="fab fa-github shadow-sm mx-3" target="_BLANK"></a>
+                            <a href="#" class="fas fa-link shadow-sm mx-3" target="_BLANK"></a>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="col-12 col-md-4 my-3">
-                <div class="card bg-dark text-white shadow-lg" data-aos="zoom-in-up">
-                    <img class="card-img" src="https://www.elintransigente.com/u/fotografias/fotosnoticias/2018/9/6/473469.jpg" alt="Card image">
-                    <div class="card-img-overlay">
-                        <h5 class="card-title d-none">Card title</h5>
-                        <p class="card-text d-none">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <div class="card bg-dark text-white shadow-lg" data-aos="zoom-in-up">
+                        <img class="card-img" src="{{asset(url('img/projects/hormiganegra.png'))}}" alt="Card image">
+                        <div class="card-img-overlay">
+                            <div class="project-info">
+                                <h5 class="card-title">Cerveceria Hormiga Negra</h5>
+                                <p class="">Prototipo de pagina web para cerveceria. Contacto con envio de mail. Panel de administración con ingreso a base de datos.</p>
+                                <a href="https://github.com/Franco-Rossi/hormiganegra" class="fab fa-github shadow-sm mx-3" target="_BLANK"></a>
+                                <a href="https://rossifrancotest.000webhostapp.com/" class="fas fa-link shadow-sm mx-3" target="_BLANK"></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-12 col-md-4 my-3">
-                <div class="card bg-dark text-white shadow-lg" data-aos="zoom-in-up">
-                    <img class="card-img" src="https://www.elintransigente.com/u/fotografias/fotosnoticias/2018/9/6/473469.jpg" alt="Card image">
-                    <div class="card-img-overlay">
-                        <h5 class="card-title d-none">Card title</h5>
-                        <p class="card-text d-none">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-md-4 my-3">
-                <div class="card bg-dark text-white shadow-lg" data-aos="zoom-in-up">
-                    <img class="card-img" src="https://www.elintransigente.com/u/fotografias/fotosnoticias/2018/9/6/473469.jpg" alt="Card image">
-                    <div class="card-img-overlay">
-                        <h5 class="card-title d-none">Card title</h5>
-                        <p class="card-text d-none">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 
-    <div class="container-fluid text-center bg-primary text-white" id="contact" style="align-items: center; ">
+    <div class="container-fluid text-center bg-primary text-white pt-3" id="contact" style="align-items: center; ">
         <div>
             <h1 class="pt-5 font-weight-bold mb-5">Contactame</h1>
             <p class="col-sm-12 col-xl-8 subtitle mx-auto mt-5 mb-5">¿Queres que forme parte de tu projecto?<br>¿Tenes una idea y queres hacerla realidad?<br>No dudes en contactarme!</p>
