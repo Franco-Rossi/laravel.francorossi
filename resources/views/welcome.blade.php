@@ -193,17 +193,24 @@
             <p class="col-sm-12 col-xl-8 subtitle mx-auto mt-5 mb-5">¿Queres que forme parte de tu projecto?<br>¿Tenes una idea y queres hacerla realidad?<br>No dudes en contactarme!</p>
         </div>
         <div>
-            <form class="col-sm-12 col-xl-8 mx-auto">
+            @if(Session::has('success'))
+            <div class="alert alert-success">
+                {{ Session::get('success') }}
+            </div>
+        @endif
+        <div>
+            <form class="col-sm-12 col-xl-8 mx-auto" method="POST" action="/contact-us">
+                {{  csrf_field() }}
                 <div class="form-group" data-aos="fade-left" data-aos-duration="1000">
-                    <input type="text" class="form-control shadow-lg" id="formGroupExampleInput" placeholder="Nombre">
+                    <input type="text" class="form-control shadow-lg" name="name" placeholder="Name" required>
                 </div>
                 <div class="form-group" data-aos="fade-left" data-aos-duration="1000">
-                    <input type="email" class="form-control shadow-lg" id="formGroupExampleInput2" placeholder="Email">
+                    <input type="email" class="form-control shadow-lg" name="email" placeholder="Email" required>
                 </div>
                 <div class="form-group" data-aos="fade-left" data-aos-duration="1000">
-                    <textarea class="form-control shadow-lg" id="exampleFormControlTextarea1" rows="7" placeholder="Ingrese su mensaje"></textarea>
+                    <textarea class="form-control shadow-lg" name="message" rows="7" placeholder="Enter your message" required></textarea>
                 </div>
-                <button type="submit" class="btn btn-lg border rounded-pill shadow-lg font-weight-bold" id="submit">Enviar</button>
+                <button type="submit" class="btn btn-lg border rounded-pill shadow-lg font-weight-bold" id="submit">Send</button>
             </form>
             <img src="{{asset(url('img/vect2.svg'))}}" class="img-fluid mt-5" alt="" style="max-height: 400px; margin-bottom: 8rem;">
         </div>

@@ -193,16 +193,22 @@
             <h1 class="pt-5 font-weight-bold mb-5">Contact me</h1>
             <p class="col-sm-12 col-xl-8 subtitle mx-auto mt-5 mb-5">Do you want me to be part of your project?<br>Do you have an idea and want to make it happen?<br>Do not hesitate to contact me!</p>
         </div>
+        @if(Session::has('success'))
+            <div class="alert alert-success">
+                {{ Session::get('success') }}
+            </div>
+        @endif
         <div>
-            <form class="col-sm-12 col-xl-8 mx-auto">
+            <form class="col-sm-12 col-xl-8 mx-auto" method="POST" action="/contact-us">
+                {{  csrf_field() }}
                 <div class="form-group" data-aos="fade-left" data-aos-duration="1000">
-                    <input type="text" class="form-control shadow-lg" id="formGroupExampleInput" placeholder="Name">
+                    <input type="text" class="form-control shadow-lg" name="name" placeholder="Name" required>
                 </div>
                 <div class="form-group" data-aos="fade-left" data-aos-duration="1000">
-                    <input type="email" class="form-control shadow-lg" id="formGroupExampleInput2" placeholder="Email">
+                    <input type="email" class="form-control shadow-lg" name="email" placeholder="Email" required>
                 </div>
                 <div class="form-group" data-aos="fade-left" data-aos-duration="1000">
-                    <textarea class="form-control shadow-lg" id="exampleFormControlTextarea1" rows="7" placeholder="Enter your message"></textarea>
+                    <textarea class="form-control shadow-lg" name="message" rows="7" placeholder="Enter your message" required></textarea>
                 </div>
                 <button type="submit" class="btn btn-lg border rounded-pill shadow-lg font-weight-bold" id="submit">Send</button>
             </form>

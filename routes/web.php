@@ -19,7 +19,9 @@ Route::get('/en', function () {
     return view('english');
 });
 
-
 Auth::routes([ 'register' => false ]);
 
 Route::get('/admin', 'AdminController@index')->name('admin');
+
+Route::post('/contact-us','ContactUsController@contactUsPost');
+
