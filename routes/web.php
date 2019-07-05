@@ -15,9 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/contact', function () {
-    return view('contact');
+Route::get('/en', function () {
+    return view('english');
 });
+
 
 Auth::routes([ 'register' => false ]);
 

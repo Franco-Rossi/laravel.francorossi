@@ -21,43 +21,6 @@
 </head>
 <body>
 
-
-    {{------------------ NavBar ------------------}}
-<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
-    <a class="navbar-brand text-primary" href="#">Franco Rossi</a>
-
-    <div class="ml-5 language-container">
-        <a href="/"><img src="{{asset(url('img/esp.png'))}}" alt="Español" class="language rounded-circle shadow-sm"></a>
-        <a href="/en"><img src="{{asset(url('img/eng.png'))}}" alt="English" class="language ml-2 rounded-circle shadow-sm"></a>
-    </div>
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
-    
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item mr-5">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item mr-5">
-                <a class="nav-link" href="#about">Sobre mi</a>
-            </li>
-            <li class="nav-item mr-5">
-                <a class="nav-link" href="#abilities">Habilidades</a>
-            </li>
-            <li class="nav-item mr-5">
-                <a class="nav-link" href="#projects">Proyectos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link rounded-pill border" id="contactBtn" href="#contact">Contacto</a>
-            </li>
-        </ul>
-    </div>
-</nav>
-
 {{------------------ Content ------------------}}
 
 @yield('content')
